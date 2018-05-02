@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+    <ImageView
+        android:id="@+id/imageDisplay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignTop="@+id/nameDisplay"
+        android:layout_marginStart="27dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginTop="13dp"
+        android:text="Naruto: Shippuuden"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/categoreiesDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameDisplay"
+        android:layout_below="@+id/nameDisplay"
+        android:text="Animation | Drama | Adventure" />
+
+    <TextView
+        android:id="@+id/ratingDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoreiesDisplay"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="5dp"
+        android:text="8.9"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/studioDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageDisplay"
+        android:layout_centerHorizontal="true"
+        android:text="Studio" />
+
+    <TextView
+        android:id="@+id/descDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ratingDisplay"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="158dp"
+        android:text="Desc"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
